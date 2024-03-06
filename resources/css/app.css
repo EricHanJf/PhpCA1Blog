@@ -6,10 +6,57 @@
 
 .background-image 
 {
-    background-image: url('https://wallpapers.com/images/hd/high-resolution-beach-background-1920-x-1200-4xuc870f2koryob0.jpg');
+    /* background-image: url('https://wallpapers.com/images/hd/high-resolution-beach-background-1920-x-1200-4xuc870f2koryob0.jpg'); */
+    background-image: url('https://images.pexels.com/photos/635279/pexels-photo-635279.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
     height: 600px;
 }
+
+.py-6 {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.font-extrabold {
+    font-weight: 700;
+}
+
+img, video {
+    width: 100%;
+}
+
+/* .Travelblog{
+    margin-top: 20px;
+    margin-left: 12vw;
+
+} */
+/* 
+.headerContiner{
+    display: flex;
+} */
+
+/* .flex {
+    display: flex;
+    flex-direction: column;
+} */
+
+/* .travelworldTitle{
+    padding-bottom: 30px;
+}
+
+.font-semibold{
+    font-size: 3.125rem;
+}
+
+.space-x-4{
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+}
+
+.text-2xl {
+    font-size: 1.0rem;
+} */

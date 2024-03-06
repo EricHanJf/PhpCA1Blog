@@ -21,29 +21,31 @@
 
     <div class="sm:grid grid-cols-2 gap-20 w-4/5 mx-auto py-15 border-b border-gray-200">
         <div>
-            {{-- <img src="https://www.10wallpaper.com/wallpaper/1366x768/1702/Austria_Tourism_Travel_Resort-High_Quality_HD_Wallpaper_1366x768.jpg" width="700" alt=""> --}}
-            <img src="https://www.bhmpics.com/downloads/high-resolution-travel-Wallpapers/13.travel-wallpaper-hd-free-download.jpg" width="700" alt="">
-            <h1><a href="/blog">Travel Blog</a></h1>
+            <img src="https://cdn.pixabay.com/photo/2017/03/02/16/54/iceland-2111811_1280.jpg" width="500" alt="">
+            {{-- <h1 class="text-2xl uppercase font-bold text-shadow-md pb-14 Travelblog"><a href="/blog">Travel Blog</a></h1> --}}
         </div>
 
         <div class="m-auto sm:m-auto text-left w-4/5 block">
             <h2 class="text-3xl font-extrabold text-gray-600">
-                Struggling to be a better web developer?
+                ICELAND TRAVEL GUIDE
             </h2>
-            
             <p class="py-8 text-gray-500 text-s">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus.
+                Overview
             </p>
+            <?php
+                $text = "Iceland is the land of fire and ice. It's a country of extreme landscapes and incredible beauty. How many places in the world can you walk on a glacier and see a volcano in the same day? One of the
+                        main reasons tourists come to Iceland is to see the waterfalls; this country has some of the best waterfalls in the world, not just in terms of size but also uniqueness. The terrain in Iceland is a perfect 
+                        combination of rugged mountains and melting glaciers in the summer, so there are over 10,000 waterfalls here.";
+    
+                if(strlen($text) > 500) {
+                     $shortText = substr($text, 0, 500) . "....";
+                     echo "<p class='font-extrabold text-gray-600 text-s pb-9'>$shortText</p>";
+                } else {
+                 echo "<p class='font-extrabold text-gray-600 text-s pb-9'>$text</p>";
+                }
+                ?>
 
-            <p class="font-extrabold text-gray-600 text-s pb-9">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente magnam vero nostrum! Perferendis eos molestias porro vero. Vel alias.
-            </p>
-
-            <a 
-                href="/blog"
-                class="uppercase bg-blue-500 text-gray-100 text-s font-extrabold py-3 px-8 rounded-3xl">
-                Find Out More
-            </a>
+            <a  href="/blog" class="uppercase bg-blue-500 text-gray-100 text-s font-extrabold py-3 px-8 rounded-3xl"> Find Out More</a>
         </div>
     </div>
 
