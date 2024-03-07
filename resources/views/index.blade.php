@@ -1,7 +1,10 @@
 @extends('layouts.app')
 
 @section('content')
-    <div class="background-image grid grid-cols-1 m-auto">
+    {{-- <div class="background-image grid grid-cols-1 m-auto">
+            <div class="slide" id="slide1"></div>
+            <div class="slide" id="slide2"></div>
+            <div class="slide" id="slide3"></div>
         <div class="flex text-gray-100 pt-10">
             <div class="m-auto pt-4 pb-16 sm:m-auto w-4/5 block text-center">
                 <h1 class="sm:text-white text-5xl uppercase font-bold text-shadow-md pb-14">
@@ -13,7 +16,27 @@
                 <a 
                     href="/blog"
                     class="text-center bg-gray-50 text-gray-700 py-2 px-4 font-bold text-xl uppercase">
-                    Read More
+                    start exploring
+                </a>
+            </div>
+        </div>
+    </div> --}}
+    <div class="background-image grid grid-cols-1 m-auto relative">
+        <div class="carousel relative">
+            <div class="slide" id="slide1"></div>
+            <div class="slide" id="slide2"></div>
+            <div class="slide" id="slide3"></div>
+        </div>
+        <div class="flex text-gray-100 pt-10 absolute top-0 left-0 w-full h-full">
+            <div class="m-auto pt-4 pb-16 sm:m-auto w-4/5 block text-center">
+                <h1 class="sm:text-white text-5xl uppercase font-bold text-shadow-md pb-14">
+                    Explore.Dream.Discover
+                </h1>
+                <h3 class="sm:text-white font-bold text-shadow-md pb-14">
+                    This is a world travel blog featuring beautiful destinations, new experiences, and hidden places around the world
+                </h3>
+                <a href="/blog" class="text-center bg-gray-50 text-gray-700 py-2 px-4 font-bold text-xl uppercase">
+                    start exploring
                 </a>
             </div>
         </div>
@@ -38,7 +61,7 @@
                         combination of rugged mountains and melting glaciers in the summer, so there are over 10,000 waterfalls here.";
     
                 if(strlen($text) > 500) {
-                     $shortText = substr($text, 0, 500) . "....";
+                     $shortText = substr($text, 0, 500) . "...";
                      echo "<p class='font-extrabold text-gray-600 text-s pb-9'>$shortText</p>";
                 } else {
                  echo "<p class='font-extrabold text-gray-600 text-s pb-9'>$text</p>";
