@@ -36,14 +36,24 @@ $scrollClass = isset($_GET['scroll']) && $_GET['scroll'] === 'down' ? 'small' : 
         <header class="bg-cool-gray-600 py-6 <?php echo $scrollClass; ?>">
             <div class="container mx-auto flex justify-between items-center px-6">
                 <div class="travelworldTitle">
-                    <a href="{{ url('/') }}" class="text-lg font-semibold text-orange-200 no-underline">
+                    <a href="{{ url('/') }}" class="text-lgInHeader font-semibold text-orange-200 no-underline">
                         {{ config('app.name', 'TravelBlog') }}
                     </a>
                 </div>
-                {{-- <div class="headerContiner"> --}}
-                <nav class="space-x-4 text-orange-300 text-sm sm:text-base">
-                    <a href="blog">Destinations</a>
-                    <a href="blog">Blog</a>
+                <nav class="space-x-4 text-orange-300 text-sm sm:text-base flex items-center"> <!-- Added 'flex items-center' -->
+                    <a href="{{ url('blog') }}">Blog</a>
+                    <a href="{{ url('about') }}">About</a>
+                    <a href="{{ url('destinations') }}">Destinations</a>
+                    <a href="{{ route('contact') }}">Contact</a>
+                    <div class="search-dropdown">
+                        <a href="#" class="search-option">Search Country</a>
+                        <div class="dropdown-content">
+                            <a href="{{ route('search', ['query' => 'Spain']) }}">Spain</a>
+                            <a href="{{ route('search', ['query' => 'France']) }}">France</a>
+                            <a href="{{ route('search', ['query' => 'Iceland']) }}">Iceland</a>
+                            <!-- Add more countries as needed -->
+                        </div>
+                    </div>
                     @guest
                         <a class="no-underline hover:underline" href="{{ route('login') }}">{{ __('Login') }}</a>
                         @if (Route::has('register'))
@@ -51,7 +61,7 @@ $scrollClass = isset($_GET['scroll']) && $_GET['scroll'] === 'down' ? 'small' : 
                         @endif
                     @else
                         <span>{{ Auth::user()->name }}</span>
-
+        
                         <a href="{{ route('logout') }}" class="no-underline hover:underline"
                             onclick="event.preventDefault();
                                 document.getElementById('logout-form').submit();">{{ __('Logout') }}</a>
@@ -60,14 +70,19 @@ $scrollClass = isset($_GET['scroll']) && $_GET['scroll'] === 'down' ? 'small' : 
                         </form>
                     @endguest
                 </nav>
-                {{-- </div> --}}
             </div>
         </header>
+        
 
         @yield('content')
     </div>
     <div>
         @include('layouts.footer')
+        <div class="container">
+            <div class="row justify-content-center">
+                <h3>{{__('messages.blog')}}</h3>
+            </div>
+        </div>
     </div>
 </body>
 

@@ -4,6 +4,10 @@
 
 @import "tailwindcss/utilities";
 
+/* @import '~flag-icon-css/sass/flag-icon'; */
+
+/* @import "/node_modules/flag-icons/css/flag-icons.min.css"; */
+
 /* .background-image 
 {
     background-image: url('https://wallpapers.com/images/hd/high-resolution-beach-background-1920-x-1200-4xuc870f2koryob0.jpg');
@@ -39,21 +43,28 @@
 
 #slide1 {
     background-image: url('https://cdn.pixabay.com/photo/2017/03/02/16/54/iceland-2111811_1280.jpg'); /* Replace with your image URL */
-    animation: fade 24s infinite;
+    animation: fade 32s infinite;
     animation-delay: 0s;
 }
 
 #slide2 {
     background-image: url('https://images.pexels.com/photos/635279/pexels-photo-635279.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'); /* Replace with your image URL */
-    animation: fade 24s infinite;
+    animation: fade 32s infinite;
     animation-delay: 8s; /* Delay for the second slide */
 }
 
 #slide3 {
-    background-image: url('https://vastphotos.com/files/uploads/photos/11326/florida-beach-photo-l.jpg?v=20220715163155'); /* Replace with your image URL */
-    animation: fade 24s infinite;
+    background-image: url('https://wallpapercave.com/wp/wp3272795.jpg'); /* Replace with your image URL */
+    animation: fade 32s infinite;
     animation-delay: 16s; /* Delay for the third slide */
 }
+
+#slide4{
+    background-image: url('https://vastphotos.com/files/uploads/photos/11326/florida-beach-photo-l.jpg?v=20220715163155'); /* Replace with your image URL */
+    animation: fade 32s infinite;
+    animation-delay: 20s; /* Delay for the third slide */
+}
+
 
 @keyframes fade {
     0%, 20% { opacity: 0; }
@@ -87,7 +98,7 @@ header{
 header.small {
     height: 60px; /* Adjust the smaller height as needed */
     transition: height 0.5s ease; /* Add a smooth transition effect */
-    .text-lg{
+    .text-lgInHeader{
         font-size: 1.125rem;
     }
 }
@@ -101,6 +112,39 @@ header.small {
     }
 }
 
-.text-lg{
+.text-lgInHeader{
     font-size: 2.125rem;
+}
+
+.text-6xl {
+    position: relative;
+    top: 50px;
+}
+
+.w-4\/5 {
+    width: 85%;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.search-dropdown:hover .dropdown-content {
+    display: block;
 }

@@ -1,31 +1,12 @@
 @extends('layouts.app')
 
 @section('content')
-    {{-- <div class="background-image grid grid-cols-1 m-auto">
-            <div class="slide" id="slide1"></div>
-            <div class="slide" id="slide2"></div>
-            <div class="slide" id="slide3"></div>
-        <div class="flex text-gray-100 pt-10">
-            <div class="m-auto pt-4 pb-16 sm:m-auto w-4/5 block text-center">
-                <h1 class="sm:text-white text-5xl uppercase font-bold text-shadow-md pb-14">
-                   Explore.Dream.Discover
-                </h1>
-                <h3 class="sm:text-white font-bold text-shadow-md pb-14">
-                    This is a world travel blog featuring beautiful destinations,new experience, and hidden places around the world
-                </h3>
-                <a 
-                    href="/blog"
-                    class="text-center bg-gray-50 text-gray-700 py-2 px-4 font-bold text-xl uppercase">
-                    start exploring
-                </a>
-            </div>
-        </div>
-    </div> --}}
     <div class="background-image grid grid-cols-1 m-auto relative">
         <div class="carousel relative">
             <div class="slide" id="slide1"></div>
             <div class="slide" id="slide2"></div>
             <div class="slide" id="slide3"></div>
+            <div class="slide" id="slide4"></div>
         </div>
         <div class="flex text-gray-100 pt-10 absolute top-0 left-0 w-full h-full">
             <div class="m-auto pt-4 pb-16 sm:m-auto w-4/5 block text-center">
@@ -41,15 +22,25 @@
             </div>
         </div>
     </div>
+    <div>
+        <h1>Popular Blog:</h1>
+    </div>
 
-    <div class="sm:grid grid-cols-2 gap-20 w-4/5 mx-auto py-15 border-b border-gray-200">
+    <div class="sm:grid grid-cols-3 gap-8 w-4/5 mx-auto py-15 border-b border-gray-200">
+        
         <div>
             <img src="https://cdn.pixabay.com/photo/2017/03/02/16/54/iceland-2111811_1280.jpg" width="500" alt="">
-            {{-- <h1 class="text-2xl uppercase font-bold text-shadow-md pb-14 Travelblog"><a href="/blog">Travel Blog</a></h1> --}}
         </div>
+        <div>
+            <img src="https://img.freepik.com/premium-photo/happy-tourist-visiting-la-sagrada-familia-barcelona-spain_169160-1010.jpg" width="500" alt="">
+        </div>
+        <div>
+            <img src="https://img.freepik.com/premium-photo/happy-tourist-visiting-la-sagrada-familia-barcelona-spain_169160-1010.jpg" width="500" alt="">
+        </div>
+        
 
         <div class="m-auto sm:m-auto text-left w-4/5 block">
-            <h2 class="text-3xl font-extrabold text-gray-600">
+            <h2 class="text-2xl font-extrabold text-gray-600">
                 ICELAND TRAVEL GUIDE
             </h2>
             <p class="py-8 text-gray-500 text-s">
@@ -60,8 +51,33 @@
                         main reasons tourists come to Iceland is to see the waterfalls; this country has some of the best waterfalls in the world, not just in terms of size but also uniqueness. The terrain in Iceland is a perfect 
                         combination of rugged mountains and melting glaciers in the summer, so there are over 10,000 waterfalls here.";
     
-                if(strlen($text) > 500) {
-                     $shortText = substr($text, 0, 500) . "...";
+                if(strlen($text) > 200) {
+                     $shortText = substr($text, 0, 200) . "...";
+                     echo "<p class='font-extrabold text-gray-600 text-s pb-9'>$shortText</p>";
+                } else {
+                 echo "<p class='font-extrabold text-gray-600 text-s pb-9'>$text</p>";
+                }
+                ?>
+
+            <a  href="/blog" class="uppercase bg-blue-500 text-gray-100 text-s font-extrabold py-3 px-8 rounded-3xl"> Find Out More</a>
+        </div>
+
+        <div class="m-auto sm:m-auto text-left w-4/5 block">
+            <h2 class="text-2xl font-extrabold text-gray-600">
+                SPAIN TRAVEL GUIDE
+            </h2>
+            <p class="py-8 text-gray-500 text-s">
+                Overview
+            </p>
+            <?php
+                $text = "Spain has a little bit of everything: mountains, city life, architecture, cuisine, coastlines, culture, history, and more.
+                        Northern Spain is known for the cathedrals of Barcelona, and you can get a healthy dose of hiking and scenery in the mountains at Montserrat National Park.
+                        With endless cultural festivals, world-class beaches, and renowned nightlife, Spain is impressive 365 days a year. I could spend years exploring Spain. 
+                        From Madrid to Barcelona to Girona to Bilbao, it’s such a vibrant country. Whether you hit the slopes of the Sierra Nevada, wander the vineyards of Rioja, 
+                        or worship the sun in the Canary Islands, Spain is guaranteed to impress you any day of the week.";
+    
+                if(strlen($text) > 200) {
+                     $shortText = substr($text, 0, 200) . "...";
                      echo "<p class='font-extrabold text-gray-600 text-s pb-9'>$shortText</p>";
                 } else {
                  echo "<p class='font-extrabold text-gray-600 text-s pb-9'>$text</p>";
