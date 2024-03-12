@@ -42,11 +42,10 @@ $scrollClass = isset($_GET['scroll']) && $_GET['scroll'] === 'down' ? 'small' : 
                 </div>
                 <nav class="space-x-4 text-orange-300 text-sm sm:text-base flex items-center"> <!-- Added 'flex items-center' -->
                     <a href="{{ url('blog') }}">Blog</a>
-                    <a href="{{ url('about') }}">About</a>
-                    <a href="{{ url('destinations') }}">Destinations</a>
+                    {{-- <a href="{{ url('destinations') }}">Destinations</a> --}}
                     <a href="{{ route('contact') }}">Contact</a>
                     <div class="search-dropdown">
-                        <a href="#" class="search-option">Search Country</a>
+                        <a href="#" class="search-option">Destinations</a>
                         <div class="dropdown-content">
                             <a href="{{ route('search', ['query' => 'Spain']) }}">Spain</a>
                             <a href="{{ route('search', ['query' => 'France']) }}">France</a>
@@ -54,6 +53,7 @@ $scrollClass = isset($_GET['scroll']) && $_GET['scroll'] === 'down' ? 'small' : 
                             <!-- Add more countries as needed -->
                         </div>
                     </div>
+                    <a href="{{ url('about') }}">About</a>
                     @guest
                         <a class="no-underline hover:underline" href="{{ route('login') }}">{{ __('Login') }}</a>
                         @if (Route::has('register'))

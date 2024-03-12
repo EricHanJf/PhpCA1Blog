@@ -23,10 +23,10 @@
         </div>
     </div>
     <div>
-        <h1>Popular Blog:</h1>
+        <h1 class="text-3xl uppercase font-bold text-shadow-md pb-3 popularBlog">Popular Blog:</h1>
     </div>
 
-    <div class="sm:grid grid-cols-3 gap-8 w-4/5 mx-auto py-15 border-b border-gray-200">
+    <div class="sm:grid grid-cols-3 gap-8 w-4/5 mx-auto py-8 border-b border-gray-200">
         
         <div>
             <img src="https://cdn.pixabay.com/photo/2017/03/02/16/54/iceland-2111811_1280.jpg" width="500" alt="">
@@ -89,6 +89,14 @@
     </div>
 
     <div class="text-center p-15 bg-black text-white">
+        <div class="background-image grid grid-cols-1 m-auto relative">
+            <div class="carousel relative">
+                <div class="slide" id="slide5"></div>
+                <div class="slide" id="slide6"></div>
+                <div class="slide" id="slide7"></div>
+            </div>
+        </div>
+        
         <h2 class="text-2xl pb-5 text-l"> 
             I'm an expert in...
         </h2>

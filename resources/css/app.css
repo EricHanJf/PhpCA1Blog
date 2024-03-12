@@ -66,11 +66,35 @@
 }
 
 
+
 @keyframes fade {
     0%, 20% { opacity: 0; }
     25%, 70% { opacity: 1; }
     80%, 100% { opacity: 0; }
+}
 
+#slide5{
+    background-image: url('https://i.pinimg.com/originals/b5/37/f4/b537f4574df0ff629cf67dda23d7f20c.jpg'); /* Replace with your image URL */
+    animation: slide 24s infinite;
+    animation-delay: 0s; /* Delay for the third slide */
+}
+
+#slide6{
+    background-image: url('https://lyphe.com/app/uploads/2023/12/Image-1-London-skyline.jpeg'); /* Replace with your image URL */
+    animation: slide 24s infinite;
+    animation-delay: 8s; /* Delay for the third slide */
+}
+
+#slide7{
+    background-image: url('https://images.unsplash.com/photo-1620563092215-0fbc6b55cfc5?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8enVyaWNofGVufDB8fDB8fHww'); /* Replace with your image URL */
+    animation: slide 24s infinite;
+    animation-delay: 16s; /* Delay for the third slide */
+}
+
+@keyframes slide {
+    0%, 20% { opacity: 0; }
+    25%, 75% { opacity: 1; }
+    80%, 100% { opacity: 0; }
 }
 
 .py-6 {
@@ -148,3 +172,10 @@ header.small {
 .search-dropdown:hover .dropdown-content {
     display: block;
 }
+
+.popularBlog{
+    text-align: center;
+    margin-top: 30px;
+}
+
+/* https://w0.peakpx.com/wallpaper/804/944/HD-wallpaper-shanghai-sunset-skyscrapers-modern-buildings-china-asia.jpg */
