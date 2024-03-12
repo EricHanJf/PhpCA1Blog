@@ -10,4 +10,19 @@ class PagesController extends Controller
     {
         return view('index');
     }
+
+    //about page
+    public function about(){
+        return view('pages.about');
+    }
+     //contact page
+     public function contact(){
+        return view('pages.contact');
+    }
+
+    public function destinations (){
+        return view('pages.destinations');
+    }
+
+    
 }

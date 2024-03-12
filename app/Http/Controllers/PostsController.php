@@ -8,6 +8,28 @@ use Cviebrock\EloquentSluggable\Services\SlugService;
 
 class PostsController extends Controller
 {
+//     public function search(Request $request)
+// {
+//     $query = $request->input('query');
+
+//     $posts = Post::where('title', 'LIKE', "%{$query}%")
+//         ->orWhere('description', 'LIKE', "%{$query}%")
+//         ->get();
+
+//     return view('blog.search', [
+//         'posts' => $posts,
+//     ]);
+// }
+
+public function search(Request $request)
+{
+    $query = $request->input('query');
+    $posts = Post::where('title', 'like', "%$query%")
+                 ->orWhere('description', 'like', "%$query%")
+                 ->paginate(10);
+
+    return view('blog.index', compact('posts'));
+}
  
     public function __construct()
     {

@@ -8,6 +8,12 @@
         </h1>
     </div>
 </div>
+<div class="w-4/5 m-auto pt-10">
+    <form action="{{ route('search') }}" method="GET">
+        <input type="text" name="query" placeholder="Search..." class="border border-gray-400 p-2">
+        <button type="submit" class="bg-blue-500 text-white p-2">Search</button>
+    </form>
+</div>
 
 @if (session()->has('message'))
     <div class="w-4/5 m-auto mt-10 pl-2">
