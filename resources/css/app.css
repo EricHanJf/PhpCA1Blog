@@ -220,3 +220,7 @@ header.small {
     margin-bottom: 20px;
     text-align: justify;
 }
+
+.blogPageImg{
+    max-width: 30vw;
+}
