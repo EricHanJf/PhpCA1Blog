@@ -42,7 +42,7 @@
                 <img src="{{ asset('images/' . $post->image_path) }}" alt="">
             </div>
             <div>
-                <h2 class="text-gray-700 font-bold text-5xl pb-4">
+                <h2 class="text-gray-700 font-bold text-4xl pb-4">
                     {{ $post->title }}
                 </h2>
 
@@ -52,10 +52,10 @@
                 </span>
 
                 <p class="text-xl text-gray-700 pt-8 pb-10 leading-8 font-light">
-                    {{ Str::limit($post->description, 400) }}
-                    @if (strlen($post->description) > 400)
+                    {{ Str::limit($post->description, 200) }}
+                    @if (strlen($post->description) > 200)
                         <span id="more_{{ $post->id }}" style="display: none;">
-                            {{ substr($post->description, 400) }}
+                            {{ substr($post->description, 200) }}
                         </span>
                         <a href="#" onclick="toggleReadMore({{ $post->id }});"
                             id="read_more_link_{{ $post->id }}">Read More</a>

@@ -22,7 +22,7 @@
         <div id="map"></div>
     </div>
 </div>
-<div class="mx-auto w-3/4 bg-gradient-to-r from-blue-100 to-blue-200 p-8 rounded-lg shadow-lg">
+<div class="mx-auto w-3/4 bg-gradient-to-r from-blue-100 to-blue-200 p-8 rounded-lg shadow-lg mb-15">
     <h1 class="welcome-heading text-3xl font-semibold text-indigo-800 mb-6">Welcome to My Travel Adventures</h1>
     <div class="welcome-text text-indigo-800">
         <p>Welcome to my travel blog, where I share my experiences and adventures from around the globe. As an avid traveler, I've had the privilege of visiting some of the most beautiful and captivating destinations in Europe.</p>
