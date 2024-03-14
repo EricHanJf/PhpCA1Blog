@@ -1,10 +1,14 @@
 @extends('layouts.app')
 
+@php
+    use Illuminate\Support\Str;
+@endphp
+
 @section('content')
 <div class="w-4/5 m-auto text-center">
     <div class="py-15 border-b border-gray-200">
         <h1 class="text-6xl">
-            Blog Postss
+            Blog Posts
         </h1>
     </div>
 </div>
@@ -48,7 +52,13 @@
             </span>
 
             <p class="text-xl text-gray-700 pt-8 pb-10 leading-8 font-light">
-                {{ $post->description }}
+                {{ Str::limit($post->description, 400) }}
+                @if (strlen($post->description) > 400)
+                    <span id="more_{{ $post->id }}" style="display: none;">
+                        {{ substr($post->description, 400) }}
+                    </span>
+                    <a href="#" onclick="toggleReadMore({{ $post->id }});" id="read_more_link_{{ $post->id }}">Read More</a>
+                @endif
             </p>
 
             <a href="/blog/{{ $post->slug }}" class="uppercase bg-blue-500 text-gray-100 text-lg font-extrabold py-4 px-8 rounded-3xl">
@@ -84,4 +94,20 @@
     </div>    
 @endforeach
 
+<script>
+    function toggleReadMore(postId) {
+        event.preventDefault();
+        var dots = document.getElementById("more_" + postId);
+        var moreText = document.getElementById("read_more_link_" + postId);
+
+        if (dots.style.display === "none") {
+            dots.style.display = "inline";
+            moreText.innerHTML = "Read Less";
+        } else {
+            dots.style.display = "none";
+            moreText.innerHTML = "Read More";
+        }
+    }
+</script>
 @endsection
+

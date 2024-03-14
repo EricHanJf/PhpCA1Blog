@@ -24,5 +24,9 @@ class PagesController extends Controller
         return view('pages.destinations');
     }
 
+    public function map (){
+        return view('pages.map');
+    }
+
     
 }

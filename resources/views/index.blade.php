@@ -22,11 +22,11 @@
             </div>
         </div>
     </div>
-    <div>
-        <h1 class="text-3xl uppercase font-bold text-shadow-md pb-3 popularBlog">Popular Blog:</h1>
+    <div class="text-3xl uppercase font-bold text-shadow-md pb-3 text-center popularBlog ">
+        <h1>Popular Blog:</h1>
     </div>
 
-    <div class="sm:grid grid-cols-3 gap-8 w-4/5 mx-auto py-8 border-b border-gray-200">
+    <div class="sm:grid grid-cols-3 gap-8 w-4/5 mx-auto py-8 border-b border-gray-200 bg-teal-950">
         
         <div>
             <img src="https://cdn.pixabay.com/photo/2017/03/02/16/54/iceland-2111811_1280.jpg" width="500" alt="">
@@ -40,12 +40,12 @@
         
 
         <div class="m-auto sm:m-auto text-left w-4/5 block">
-            <h2 class="text-2xl font-extrabold text-gray-600">
+            <h2 class="text-2xl font-extrabold py-4 text-gray-600">
                 ICELAND TRAVEL GUIDE
             </h2>
-            <p class="py-8 text-gray-500 text-s">
+            {{-- <p class="py-8 text-gray-500 text-s">
                 Overview
-            </p>
+            </p> --}}
             <?php
                 $text = "Iceland is the land of fire and ice. It's a country of extreme landscapes and incredible beauty. How many places in the world can you walk on a glacier and see a volcano in the same day? One of the
                         main reasons tourists come to Iceland is to see the waterfalls; this country has some of the best waterfalls in the world, not just in terms of size but also uniqueness. The terrain in Iceland is a perfect 
@@ -63,12 +63,12 @@
         </div>
 
         <div class="m-auto sm:m-auto text-left w-4/5 block">
-            <h2 class="text-2xl font-extrabold text-gray-600">
+            <h2 class="text-2xl font-extrabold py-4 text-gray-600">
                 SPAIN TRAVEL GUIDE
             </h2>
-            <p class="py-8 text-gray-500 text-s">
+            {{-- <p class="py-8 text-gray-500 text-s">
                 Overview
-            </p>
+            </p> --}}
             <?php
                 $text = "Spain has a little bit of everything: mountains, city life, architecture, cuisine, coastlines, culture, history, and more.
                         Northern Spain is known for the cathedrals of Barcelona, and you can get a healthy dose of hiking and scenery in the mountains at Montserrat National Park.
