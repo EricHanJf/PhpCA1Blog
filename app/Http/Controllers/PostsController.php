@@ -67,6 +67,7 @@ public function search(Request $request)
         $request->validate([
             'title' => 'required',
             'description' => 'required',
+            'blogtitle' => 'required',
             'image' => 'required|mimes:jpg,png,jpeg|max:5048'
         ]);
 
@@ -77,6 +78,7 @@ public function search(Request $request)
         Post::create([
             'title' => $request->input('title'),
             'description' => $request->input('description'),
+            'blogtitle' => $request->input('blogtitle'),
             'slug' => SlugService::createSlug(Post::class, 'slug', $request->title),
             'image_path' => $newImageName,
             'user_id' => auth()->user()->id
@@ -122,12 +124,14 @@ public function search(Request $request)
         $request->validate([
             'title' => 'required',
             'description' => 'required',
+            'blogtitle' => 'required'
         ]);
 
         Post::where('slug', $slug)
             ->update([
                 'title' => $request->input('title'),
                 'description' => $request->input('description'),
+                'blogtitle' => $request->input('blogtitle'),
                 'slug' => SlugService::createSlug(Post::class, 'slug', $request->title),
                 'user_id' => auth()->user()->id
             ]);

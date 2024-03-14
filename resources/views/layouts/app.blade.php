@@ -29,6 +29,9 @@ $scrollClass = isset($_GET['scroll']) && $_GET['scroll'] === 'down' ? 'small' : 
 
     <!-- Styles -->
     <link href="{{ mix('css/app.css') }}" rel="stylesheet">
+    {{-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-Cvew4w8tDFAAgvIy+P3Ge2UCFegmD4JHwDZi4AGGZPl/oRtmjKuMbBIo3Tg/NxGR4Zco9FUcImbOtKi2E4Mw6w==" crossorigin="anonymous" referrerpolicy="no-referrer" /> --}}
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBoURqguj-ghlk7AqxvjNo-Y_t8MhP0D4s&callback=initMap" async defer></script>
 </head>
 
 <body class="bg-gray-100 h-screen antialiased leading-none font-sans">
@@ -44,6 +47,7 @@ $scrollClass = isset($_GET['scroll']) && $_GET['scroll'] === 'down' ? 'small' : 
                     <a href="{{ url('blog') }}">Blog</a>
                     {{-- <a href="{{ url('destinations') }}">Destinations</a> --}}
                     <a href="{{ route('contact') }}">Contact</a>
+                    <a href="{{ route('map') }}">Map</a>
                     <div class="search-dropdown">
                         <a href="#" class="search-option">Destinations</a>
                         <div class="dropdown-content">
@@ -78,11 +82,11 @@ $scrollClass = isset($_GET['scroll']) && $_GET['scroll'] === 'down' ? 'small' : 
     </div>
     <div>
         @include('layouts.footer')
-        <div class="container">
+        {{-- <div class="container">
             <div class="row justify-content-center">
                 <h3>{{__('messages.blog')}}</h3>
             </div>
-        </div>
+        </div> --}}
     </div>
 </body>
 

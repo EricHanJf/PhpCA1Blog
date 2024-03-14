@@ -178,4 +178,46 @@ header.small {
     margin-top: 30px;
 }
 
-/* https://w0.peakpx.com/wallpaper/804/944/HD-wallpaper-shanghai-sunset-skyscrapers-modern-buildings-china-asia.jpg */
+.imgforAbout{
+    width: 55vw;
+}
+
+.about-container{
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+
+.author-container{
+    display: flex;
+    align-items: center
+}
+
+#map-container {
+    margin: 0 auto;
+    padding: 20px;
+    position: relative;
+    top: 50px;
+}
+
+#map {
+    height: 600px;
+}
+
+.welcome-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+.welcome-heading {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.welcome-text {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    text-align: justify;
+}

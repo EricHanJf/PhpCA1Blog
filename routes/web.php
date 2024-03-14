@@ -22,6 +22,8 @@ Route::resource('/blog', PostsController::class);
 Route::get('/about', [\App\Http\Controllers\PagesController::class, 'about'])->name('about');
 Route::get('/contact', [\App\Http\Controllers\PagesController::class, 'contact'])->name('contact');
 Route::get('/destinations', [\App\Http\Controllers\PagesController::class, 'destinations'])->name('destinations');
+Route::get('/map', [\App\Http\Controllers\PagesController::class, 'map'])->name('map');
+
 
 // Route::get('lang/{lang}', ['as' => 'lang.switch', 'uses' => '\App\Http\Controllers\LanguageController@switchLang']);
 // Route::get('/search', 'PostsController@search')->name('search');
