@@ -54,6 +54,11 @@ $scrollClass = isset($_GET['scroll']) && $_GET['scroll'] === 'down' ? 'small' : 
                             <a href="{{ route('search', ['query' => 'Spain']) }}">Spain</a>
                             <a href="{{ route('search', ['query' => 'France']) }}">France</a>
                             <a href="{{ route('search', ['query' => 'Iceland']) }}">Iceland</a>
+                            <a href="{{ route('search', ['query' => 'Ireland']) }}">Ireland</a>
+                            <a href="{{ route('search', ['query' => 'Netherland']) }}">Netherland</a>
+                            <a href="{{ route('search', ['query' => 'Italy']) }}">Italy</a>
+                            <a href="{{ route('search', ['query' => 'London']) }}">London</a>
+
                             <!-- Add more countries as needed -->
                         </div>
                     </div>

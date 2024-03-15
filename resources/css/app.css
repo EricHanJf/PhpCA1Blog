@@ -224,3 +224,8 @@ header.small {
 .blogPageImg{
     max-width: 30vw;
 }
+
+.blogImage{
+    width: 100vw;
+    height: 35vw;
+}

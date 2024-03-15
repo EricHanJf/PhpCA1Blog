@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-    <div class="bg-blue-100">
+    {{-- <div class="bg-blue-100"> --}}
         <div class="w-4/5 m-auto text-left">
             <div class="py-15">
                 <h1 class="text-6xl text-gray-800 font-bold text-center mt-5">
@@ -55,18 +55,26 @@
                     <p class="text-gray-800 mb-2">Ready to explore more travel adventures?</p>
                     <a href="/blog" class="text-blue-600 hover:underline">Browse our latest blog posts</a>
                 </div>
+                <div class="mt-9 text-center">
+                    <h2 class="text-3xl font-semibold text-gray-800 mb-4">Tips for creating a great travel blog post:</h2>
+                        <p class="  text-gray-700 mb-2 text-center">Include a catchy title that captures the essence of your travel experience.</p>
+                        <p class="  text-gray-700 mb-2 text-center">Add a descriptive blog title that provides insight into the destination or theme of your post.</p>
+                        <p class="  text-gray-700 mb-2 text-center">Write a compelling description that highlights the highlights of your trip and engages readers.</p>
+                        <p class="  text-gray-700 text-center">Select an eye-catching image that showcases the beauty of your destination.</p>
+                </div>
             </form>
             @if (session('success'))
                 <div class="mt-8 bg-green-200 text-green-800 p-4 rounded-lg">
                     {{ session('success') }}
                 </div>
             @endif
-            <div class="mt-9 text-center">
+
+            {{-- <div class="mt-9 text-center">
                 <h2 class="text-3xl font-semibold text-gray-800 mb-4">Tips for creating a great travel blog post:</h2>
                     <p class="  text-gray-700 mb-2 text-center">Include a catchy title that captures the essence of your travel experience.</p>
                     <p class="  text-gray-700 mb-2 text-center">Add a descriptive blog title that provides insight into the destination or theme of your post.</p>
                     <p class="  text-gray-700 mb-2 text-center">Write a compelling description that highlights the highlights of your trip and engages readers.</p>
                     <p class="  text-gray-700 text-center">Select an eye-catching image that showcases the beauty of your destination.</p>
-            </div>
-    </div>
+            </div> --}}
+    {{-- </div> --}}
 @endsection
