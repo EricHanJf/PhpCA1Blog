@@ -20,7 +20,8 @@ Route::get('/', [PagesController::class, 'index']);
 Route::get('/blog/search', [\App\Http\Controllers\PostsController::class, 'search'])->name('search');
 Route::resource('/blog', PostsController::class);
 Route::get('/about', [\App\Http\Controllers\PagesController::class, 'about'])->name('about');
-Route::get('/contact', [\App\Http\Controllers\PagesController::class, 'contact'])->name('contact');
+Route::get('/picturescollection', [\App\Http\Controllers\PagesController::class, 'picturescollection'])->name('picturescollection');
+// Route::get('/contact', [\App\Http\Controllers\PagesController::class, 'contact'])->name('contact');
 Route::get('/destinations', [\App\Http\Controllers\PagesController::class, 'destinations'])->name('destinations');
 Route::get('/map', [\App\Http\Controllers\PagesController::class, 'map'])->name('map');
 
