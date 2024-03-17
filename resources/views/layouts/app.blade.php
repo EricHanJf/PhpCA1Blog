@@ -46,7 +46,8 @@ $scrollClass = isset($_GET['scroll']) && $_GET['scroll'] === 'down' ? 'small' : 
                 <nav class="space-x-4 text-orange-300 text-sm sm:text-base flex items-center"> <!-- Added 'flex items-center' -->
                     <a href="{{ url('blog') }}">Blog</a>
                     {{-- <a href="{{ url('destinations') }}">Destinations</a> --}}
-                    <a href="{{ route('contact') }}">Contact</a>
+                    {{-- <a href="{{ route('contact') }}">Contact</a> --}}
+                    <a href="{{ route('picturescollection') }}">City Gallery</a> 
                     <a href="{{ route('map') }}">Map</a>
                     <div class="search-dropdown">
                         <a href="#" class="search-option">Destinations</a>

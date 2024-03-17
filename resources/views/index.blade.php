@@ -25,66 +25,75 @@
     <div class="text-3xl uppercase font-bold text-shadow-md pb-3 text-center popularBlog ">
         <h1>Popular Blog:</h1>
     </div>
-
     <div class="sm:grid grid-cols-3 gap-8 w-4/5 mx-auto py-8 border-b border-gray-200 bg-teal-950">
         
-        <div>
-            <img src="https://cdn.pixabay.com/photo/2017/03/02/16/54/iceland-2111811_1280.jpg" width="500" alt="">
-        </div>
-        <div>
+    
+        {{-- <div>
             <img src="https://img.freepik.com/premium-photo/happy-tourist-visiting-la-sagrada-familia-barcelona-spain_169160-1010.jpg" width="500" alt="">
-        </div>
-        <div>
-            <img src="https://img.freepik.com/premium-photo/happy-tourist-visiting-la-sagrada-familia-barcelona-spain_169160-1010.jpg" width="500" alt="">
-        </div>
+        </div> --}}
         
-
-        <div class="m-auto sm:m-auto text-left w-4/5 block">
-            <h2 class="text-2xl font-extrabold py-4 text-gray-600">
-                ICELAND TRAVEL GUIDE
-            </h2>
-            {{-- <p class="py-8 text-gray-500 text-s">
-                Overview
-            </p> --}}
-            <?php
+        <div class="bg-gray-200 rounded-lg overflow-hidden">
+            <img src="https://cdn.pixabay.com/photo/2017/03/02/16/54/iceland-2111811_1280.jpg" alt="Iceland" class="w-full " style="height: 250px;">
+            <div class="p-6">
+                <h2 class="text-3xl font-bold text-gray-800 mb-5">ICELAND TRAVEL GUIDE</h2>
+                <?php
                 $text = "Iceland is the land of fire and ice. It's a country of extreme landscapes and incredible beauty. How many places in the world can you walk on a glacier and see a volcano in the same day? One of the
                         main reasons tourists come to Iceland is to see the waterfalls; this country has some of the best waterfalls in the world, not just in terms of size but also uniqueness. The terrain in Iceland is a perfect 
                         combination of rugged mountains and melting glaciers in the summer, so there are over 10,000 waterfalls here.";
     
                 if(strlen($text) > 200) {
                      $shortText = substr($text, 0, 200) . "...";
-                     echo "<p class='font-extrabold text-gray-600 text-s pb-9'>$shortText</p>";
+                     echo "<p class='font-extrabold text-gray-600 text-xl pb-9'>$shortText</p>";
                 } else {
-                 echo "<p class='font-extrabold text-gray-600 text-s pb-9'>$text</p>";
+                 echo "<p class='font-extrabold text-gray-600 text-xl pb-9'>$text</p>";
                 }
                 ?>
-
-            <a  href="/blog" class="uppercase bg-blue-500 text-gray-100 text-s font-extrabold py-3 px-8 rounded-3xl"> Find Out More</a>
+                <a href="/blog" class="mt-4 inline-block bg-blue-500 text-white px-6 py-3 rounded-lg uppercase font-bold hover:bg-blue-600">Find Out More</a>
+            </div>
         </div>
 
-        <div class="m-auto sm:m-auto text-left w-4/5 block">
-            <h2 class="text-2xl font-extrabold py-4 text-gray-600">
-                SPAIN TRAVEL GUIDE
-            </h2>
-            {{-- <p class="py-8 text-gray-500 text-s">
-                Overview
-            </p> --}}
-            <?php
+        <div class="bg-gray-200 rounded-lg overflow-hidden">
+            <img src="https://img.freepik.com/premium-photo/happy-tourist-visiting-la-sagrada-familia-barcelona-spain_169160-1010.jpg" alt="Spain" class="w-full" style="height: 250px;">
+            <div class="p-6">
+                <h2 class="text-3xl font-bold text-gray-800 mb-5">SPAIN TRAVEL GUIDE</h2>
+                <?php
                 $text = "Spain has a little bit of everything: mountains, city life, architecture, cuisine, coastlines, culture, history, and more.
                         Northern Spain is known for the cathedrals of Barcelona, and you can get a healthy dose of hiking and scenery in the mountains at Montserrat National Park.
                         With endless cultural festivals, world-class beaches, and renowned nightlife, Spain is impressive 365 days a year. I could spend years exploring Spain. 
                         From Madrid to Barcelona to Girona to Bilbao, it’s such a vibrant country. Whether you hit the slopes of the Sierra Nevada, wander the vineyards of Rioja, 
                         or worship the sun in the Canary Islands, Spain is guaranteed to impress you any day of the week.";
     
-                if(strlen($text) > 200) {
-                     $shortText = substr($text, 0, 200) . "...";
-                     echo "<p class='font-extrabold text-gray-600 text-s pb-9'>$shortText</p>";
+                if(strlen($text) > 220) {
+                     $shortText = substr($text, 0, 220) . "...";
+                     echo "<p class='font-extrabold text-gray-600 text-xl pb-9'>$shortText</p>";
                 } else {
                  echo "<p class='font-extrabold text-gray-600 text-s pb-9'>$text</p>";
                 }
                 ?>
+                <a href="/blog" class="mt-4 inline-block bg-blue-500 text-white px-6 py-3 rounded-lg uppercase font-bold hover:bg-blue-600">Find Out More</a>
+            </div>
+        </div>
 
-            <a  href="/blog" class="uppercase bg-blue-500 text-gray-100 text-s font-extrabold py-3 px-8 rounded-3xl"> Find Out More</a>
+        <div class="bg-gray-200 rounded-lg overflow-hidden">
+            <img src="https://w0.peakpx.com/wallpaper/664/1017/HD-wallpaper-nice-france-old-city-resort-summer-evening-beautiful-cities-french-riviera-provence-cote-dazur.jpg" alt="france" class="w-full" style="height: 250px;">
+            <div class="p-6">
+                <h2 class="text-3xl font-bold text-gray-800 mb-5">FRANCE TRAVEL GUIDE</h2>
+                <?php
+                $text = "Spain has a little bit of everything: mountains, city life, architecture, cuisine, coastlines, culture, history, and more.
+                        Northern Spain is known for the cathedrals of Barcelona, and you can get a healthy dose of hiking and scenery in the mountains at Montserrat National Park.
+                        With endless cultural festivals, world-class beaches, and renowned nightlife, Spain is impressive 365 days a year. I could spend years exploring Spain. 
+                        From Madrid to Barcelona to Girona to Bilbao, it’s such a vibrant country. Whether you hit the slopes of the Sierra Nevada, wander the vineyards of Rioja, 
+                        or worship the sun in the Canary Islands, Spain is guaranteed to impress you any day of the week.";
+    
+                if(strlen($text) > 220) {
+                     $shortText = substr($text, 0, 220) . "...";
+                     echo "<p class='font-extrabold text-gray-600 text-xl pb-9'>$shortText</p>";
+                } else {
+                 echo "<p class='font-extrabold text-gray-600 text-s pb-9'>$text</p>";
+                }
+                ?>
+                <a href="/blog" class="mt-4 inline-block bg-blue-500 text-white px-6 py-3 rounded-lg uppercase font-bold hover:bg-blue-600">Find Out More</a>
+            </div>
         </div>
     </div>
 
