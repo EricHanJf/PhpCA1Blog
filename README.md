@@ -1,10 +1,29 @@
 ## Laravel 8 Travel Blog
 
-This repository is linked to [this youtube video](https://www.youtube.com/watch?v=HKJDLXsTr8A&t=4710s) where I show you how to create a complete blog in Laravel 8 using best practices.
+Welcome to the Travel Blog Laravel project! This is a web application built using the Laravel framework, aimed at providing users with a shared travel experience and travel guide.
 
-•	Author: Code With Dary <br>
-•	Twitter: [@codewithdary](https://twitter.com/codewithdary) <br>
-•	Instagram: [@codewithdary](https://www.instagram.com/codewithdary/) <br>
+•	Author: Jianfeng Han(SD2A)  <br>
+•	Student NUmber: D00251825<br>
+
+## Features
+
+- **User Authentication**: Secure user registration and authentication system.
+- **Blog**: Create, read, update, and delete blog posts.
+- **Search**: Search for specific destinations or topics within the blog.
+- **Social Sharing**: Share blog posts on various social media platforms.
+- **Interactive Maps**: Explore interactive maps featuring popular destinations.
+
+## Technologies / Programming Languages Used
+•	Laravel 8 <br>
+•	JavaScript<br>
+•	Tailwind CSS <br>
+•	MySQL<br>
+•	PHP<br>
+
+
+## Installation
+
+To run the Travel Blog Laravel project on your local machine, follow these steps:
 
 ## Requirements
 •	PHP 7.3 or higher <br>
