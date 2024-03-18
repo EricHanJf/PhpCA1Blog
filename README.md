@@ -41,6 +41,8 @@ php artisan cache:clear && php artisan config:clear
 php artisan serve
 ```
 
+<img width="1512" alt="Screenshot 2024-03-18 at 02 09 03" src="https://github.com/EricHanJf/PhpCA1Blog/assets/119952942/e7ec3681-88b1-492d-ad92-ea804eaaa30c">
+
 ## Before starting <br>
 Create a database <br>
 ```
