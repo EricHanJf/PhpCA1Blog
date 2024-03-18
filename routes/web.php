@@ -29,7 +29,6 @@ Route::get('/map', [\App\Http\Controllers\PagesController::class, 'map'])->name(
 // Route::get('lang/{lang}', ['as' => 'lang.switch', 'uses' => '\App\Http\Controllers\LanguageController@switchLang']);
 // Route::get('/search', 'PostsController@search')->name('search');
 
-
 Auth::routes();
 
 Route::get('/home', [\App\Http\Controllers\HomeController::class, 'index'])->name('home');

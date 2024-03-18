@@ -2,7 +2,7 @@
 
 @section('content')
     <div class="container mx-auto picture-collection">
-        <h1 class="text-4xl font-bold text-center my-20">City Pictures Collection</h1>
+        <h1 class="font-bold text-center my-15 text-5xl pagetitle">City Pictures Collection</h1>
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
             <div class="picture-item bg-gray-200 rounded-lg overflow-hidden special-feature">
                 <img src="https://www.thesun.co.uk/wp-content/uploads/2023/01/houses-parliament-big-ben-double-780545902.jpg" alt="London" class="w-full h-auto" style="height: 300px;">
