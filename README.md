@@ -6,13 +6,14 @@ Welcome to the Travel Blog Laravel project! This is a web application built usin
 •	Student Number: D00251825<br>
 
 ## Reference
-This tech blog is referenced from this github repository
 
-This repository is linked to this youtube video where I show you how to create a complete blog in Laravel 8 using best practices.
+This tech blog is referenced from [this GitHub repository](https://github.com/example-repo).
 
-• Author: Code With Dary
-• Twitter: @codewithdary
-• Instagram: @codewithdary
+This repository is linked to [this YouTube video](https://www.youtube.com/watch?v=your-video-id) where I show you how to create a complete blog in Laravel 8 using best practices.
+
+- **Author:** Code With Dary
+- **Twitter:** [@codewithdary](https://twitter.com/codewithdary)
+- **Instagram:** [@codewithdary](https://instagram.com/codewithdary)
 
 ## Technologies / Programming Languages Used
 •	Laravel 8 <br>
