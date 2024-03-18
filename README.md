@@ -82,6 +82,7 @@ php artisan migrate
 <img width="1512" alt="Screenshot 2024-03-18 at 02 09 40" src="https://github.com/EricHanJf/PhpCA1Blog/assets/119952942/e6ef83c4-c408-42c2-b003-0826eefdf8af">
 <img width="1512" alt="Screenshot 2024-03-18 at 02 09 34" src="https://github.com/EricHanJf/PhpCA1Blog/assets/119952942/762496dc-1752-4a0d-8927-3fdf91ef3462">
 <img width="1512" alt="Screenshot 2024-03-18 at 02 10 30" src="https://github.com/EricHanJf/PhpCA1Blog/assets/119952942/100454b9-bdfb-4838-a0df-096e468b023b">
+<img width="1512" alt="Screenshot 2024-03-18 at 02 11 57" src="https://github.com/EricHanJf/PhpCA1Blog/assets/119952942/0838c5b8-2482-4e8f-81f8-96094bca86e4">
 <img width="1512" alt="Screenshot 2024-03-18 at 02 11 01" src="https://github.com/EricHanJf/PhpCA1Blog/assets/119952942/7fa3ce4f-985b-4e9b-bb43-d374e5021b89">
 <img width="1512" alt="Screenshot 2024-03-18 at 02 11 20" src="https://github.com/EricHanJf/PhpCA1Blog/assets/119952942/3ae2ccf3-c52c-4cb7-9920-e88e46dd5067">
 <img width="1512" alt="Screenshot 2024-03-18 at 02 11 30" src="https://github.com/EricHanJf/PhpCA1Blog/assets/119952942/34f7ff54-1da9-4f40-ab5b-0af82f968243">
