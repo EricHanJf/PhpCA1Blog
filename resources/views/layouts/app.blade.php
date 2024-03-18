@@ -43,7 +43,7 @@ $scrollClass = isset($_GET['scroll']) && $_GET['scroll'] === 'down' ? 'small' : 
                         {{ config('app.name', 'TravelBlog') }}
                     </a>
                 </div>
-                <nav class="space-x-4 text-orange-300 text-sm sm:text-base flex items-center"> <!-- Added 'flex items-center' -->
+                <nav class="space-x-4 text-orange-300 text-sm sm:text-base flex items-center navbar">
                     <a href="{{ url('blog') }}">Blog</a>
                     {{-- <a href="{{ url('destinations') }}">Destinations</a> --}}
                     {{-- <a href="{{ route('contact') }}">Contact</a> --}}

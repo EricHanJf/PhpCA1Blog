@@ -4,6 +4,9 @@
 
 @import "tailwindcss/utilities";
 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Protest+Riot&display=swap');
+
+
 /* @import '~flag-icon-css/sass/flag-icon'; */
 
 /* @import "/node_modules/flag-icons/css/flag-icons.min.css"; */
@@ -163,7 +166,7 @@ header.small {
 }
 
 .dropdown-content a:hover {
-    background-color: #f1f1f1;
+    background-color: #B67352;
 }
 
 .search-dropdown:hover .dropdown-content {
@@ -241,4 +244,46 @@ header.small {
 }
 .picture-item:hover .description {
     display: block;
+}
+
+.footer-nav-links{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+    overflow: hidden;
+}
+
+.footer-nav-links a {
+    color: white;
+    text-decoration: none;
+    border-bottom: 3px solid transparent;
+    padding: 13px 15px;
+    transition: .4s; 
+}
+
+.footer-nav-links a:hover {
+    color: rgba(255, 255, 255, 0.767);
+    border-bottom: 3px solid white;
+}
+
+.navbar{
+    font-family: "Montserrat", sans-serif;
+    overflow: hidden;
+}
+
+.navbar a {
+    /* color: white; */
+    text-decoration: none;
+    border-bottom: 3px solid transparent;
+    padding: 3px 5px;
+    transition: .4s; 
+}
+
+.navbar a:hover {
+    color: rgba(255, 255, 255, 0.767);
+    border-bottom: 3px solid rgb(254, 236, 226);
+}
+
+.pagetitle{
+    color: #776B5D;
+
 }

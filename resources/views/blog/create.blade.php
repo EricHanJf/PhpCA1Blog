@@ -4,7 +4,7 @@
     {{-- <div class="bg-blue-100"> --}}
         <div class="w-4/5 m-auto text-left">
             <div class="py-15">
-                <h1 class="text-6xl text-gray-800 font-bold text-center mt-5">
+                <h1 class="text-6xl text-gray-800 font-bold text-center mt-5 pagetitle">
                     Create a Travel Blog
                 </h1>
             </div>
