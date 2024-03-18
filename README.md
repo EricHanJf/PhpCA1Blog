@@ -5,6 +5,16 @@ Welcome to the Travel Blog Laravel project! This is a web application built usin
 •	Author: Jianfeng Han(SD2A)  <br>
 •	Student Number: D00251825<br>
 
+## Reference
+
+This tech blog is referenced from [this GitHub repository](https://github.com/example-repo).
+
+This repository is linked to [this YouTube video](https://www.youtube.com/watch?v=your-video-id) where I show you how to create a complete blog in Laravel 8 using best practices.
+
+- **Author:** Code With Dary
+- **Twitter:** [@codewithdary](https://twitter.com/codewithdary)
+- **Instagram:** [@codewithdary](https://instagram.com/codewithdary)
+
 ## Technologies / Programming Languages Used
 •	Laravel 8 <br>
 •	JavaScript<br>
@@ -78,6 +88,11 @@ php artisan migrate
 <img width="1512" alt="Screenshot 2024-03-18 at 02 11 30" src="https://github.com/EricHanJf/PhpCA1Blog/assets/119952942/34f7ff54-1da9-4f40-ab5b-0af82f968243">
 
 
+
+
+## Contact
+For any questions, suggestions, or conspiracy theories you'd like to share, feel free to reach out to us at:
+Email: (d00251825@student.dkit.ie)
 
 ## Contributing
 Do not hesitate to contribute to the project by adapting or adding features ! Bug reports or pull requests are welcome.
