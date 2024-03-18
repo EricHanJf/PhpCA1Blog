@@ -3,15 +3,7 @@
 Welcome to the Travel Blog Laravel project! This is a web application built using the Laravel framework, aimed at providing users with a shared travel experience and travel guide.
 
 •	Author: Jianfeng Han(SD2A)  <br>
-•	Student NUmber: D00251825<br>
-
-## Features
-
-- **User Authentication**: Secure user registration and authentication system.
-- **Blog**: Create, read, update, and delete blog posts.
-- **Search**: Search for specific destinations or topics within the blog.
-- **Social Sharing**: Share blog posts on various social media platforms.
-- **Interactive Maps**: Explore interactive maps featuring popular destinations.
+•	Student Number: D00251825<br>
 
 ## Technologies / Programming Languages Used
 •	Laravel 8 <br>
@@ -63,6 +55,20 @@ Migrate the tables
 ```
 php artisan migrate
 ```
+
+## Features
+
+- **User Authentication**: Secure user registration and authentication system.
+- **Blog**: Create, read, update, and delete blog posts.
+- **Search**: Search for specific destinations or topics within the blog.
+- **Social Sharing**: Share blog posts on various social media platforms.
+- **Interactive Maps**: Explore interactive maps featuring popular destinations.
+
+
+## ScreenShots:
+
+
+
 
 ## Contributing
 Do not hesitate to contribute to the project by adapting or adding features ! Bug reports or pull requests are welcome.
